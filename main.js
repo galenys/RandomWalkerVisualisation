@@ -1,7 +1,7 @@
 const STEP_SIZE = 10;
 const COLOR_CHANGE_RATE = 0.03;
 const HISTOGRAM_WIDTH = 5;
-const HISTOGRAM_HEIGHT = 7;
+const HISTOGRAM_HEIGHT = 9;
 
 class Path {
   constructor(origin) {
@@ -121,7 +121,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   frameRate(30);
 
-  pathHandler = new PathHandler(1000, createVector(width/2, height/2));
+  pathHandler = new PathHandler(500, createVector(width/2, height/2));
 }
 
 function draw() {
